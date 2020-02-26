@@ -7,7 +7,7 @@ import cv2
 from random import shuffle
 
 annotationpaths = sorted(glob('./annotations/*.xml'))
-num_train_samples = int(1.0 * len(annotationpaths))
+num_train_samples = int(0.9 * len(annotationpaths))
 print('num_train_samples: ', num_train_samples)
 shuffle(annotationpaths)
 trainpaths = annotationpaths[:num_train_samples]

@@ -56,7 +56,7 @@ def red_green_yellow(rgb_image):
     height, width, _ = green_result.shape
     number_pixel = height*width
     print(number_pixel)
-    if sum_red < 0.1*number_pixel and sum_yellow < 0.01*number_pixel and sum_green < 0.1*number_pixel:
+    if sum_red < 0.1*number_pixel and sum_yellow < 0.01*number_pixel and sum_green < 0.06*number_pixel:
       return "black"
     elif sum_red >= sum_yellow and sum_red >= sum_green:
       return "red"
